@@ -7,10 +7,19 @@
     list-style: none;
 }
 
+.My__icon {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./иконка.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
 body {
     min-height: 100vh;
-    background: rgb(56, 35, 35);
-    color: rgb(255, 124, 124);
+    background: #141414;
+    color: #FF7373;
 }
 
 header {
@@ -33,13 +42,13 @@ header {
 }
 
 .logo i {
-    color:rgb(255, 42, 42);
+    color:#FF0000;
     font-size: 56px;
     margin-right: 10px ;
 }
 
 .logo span {
-    color: rgb(255, 124, 124);
+    color: #FF7373;
     font-size: 3.4rem;
     font-weight: 600;
 }
@@ -49,7 +58,7 @@ header {
 }
 
 .navbar a {
-   color: rgb(255, 124, 124);
+   color: #FF7373;
    font-size: 2rem;
    font-weight: 500;
    padding: 5px 0px;
@@ -58,16 +67,16 @@ header {
 }
 
 .navbar a:hover {
-    color:rgb(255, 42, 42);
+    color:#FF0000;
 }
 
 .navbar a.active {
-    color:rgb(255, 42, 42)
+    color:#FF0000;
 }
 
 #menu-icon {
     font-size: 35px;
-    color: rgb(255, 124, 124);
+    color: #FF7373;
     cursor: pointer;
     z-index: 100001;
     display: none;
@@ -95,7 +104,7 @@ header {
         right: -100%;
         width: 270px;
         height: 29vh;
-        background: rgb(255, 42, 42);
+        background: #FF0000;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -109,13 +118,37 @@ header {
         transition: all 0.5s ease;
     }
     .navbar a:hover {
-        color: rgb(255, 124, 124);
+        color: #FF7373;
         transform: translateY(5px);
     }
     .navbar a.active {
-        color: rgb(255, 124, 124);
+        color: #FF7373;
     }
     .navbar.open {
         right: 2%;
     }
+}
+
+.content {
+ color: #FF4040;
+ position: absolute;
+ top: 35%;
+ left: 8%;
+}
+
+.content h1 {
+    font-size: 50px;
+    padding: 15px 0px;
+}
+
+.content h2 {
+    text-align: center;
+    text-decoration-line: underline;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+
+.content h2:hover {
+ color: #FF0000;
+ transform: translateY(-5px);
 }
